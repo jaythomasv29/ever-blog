@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './Featured.css'
 
 import homeOutside1 from '../../assets/house-outside-1.jpeg'

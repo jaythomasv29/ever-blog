@@ -1,0 +1,90 @@
+.listings {
+  margin-top: 5rem;
+}
+
+.listings .title-text {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.listings .container {
+  --gap: 1.2rem;
+  --num-cols: 5;
+  --row-height: 300px;
+
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.listings .container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.right-img-details .btn {
+  margin: 1rem 0;
+}
+
+.listings .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listings .top .price {
+  font-weight: 600;
+  color: #008000;
+  font-size: 1.5rem;
+}
+
+.listings .info {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.8rem 0;
+  width: 100%;
+}
+
+.listings .bold {
+  font-weight: 600;
+}
+
+.info p {
+  margin-left: 1rem;
+}
+
+hr {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .listings .container {
+    --num-cols: 2;
+    --row-height: 200px;
+    --gap: 0.7rem;
+  }
+
+  .span-3 {
+    grid-column: span 2;
+  }
+}

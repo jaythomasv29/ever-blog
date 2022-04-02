@@ -13,7 +13,7 @@ function Hero() {
             <input type="text" placeholder="Enter Keyword.."/>
           </div>
           <div className="radio">
-            <input type="radio" value="rent" name="type" checked/>
+            <input type="radio" value="rent" name="type" defaultChecked/>
             <label>Rent</label>
 
             <input type="radio" value="buy" name="type" />

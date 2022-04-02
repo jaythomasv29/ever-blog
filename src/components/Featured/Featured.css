@@ -30,5 +30,24 @@
 }
 
 @media screen and (max-width: 940px) {
-  
+  .featured {
+    margin: 1rem 0;
+  }
+
+  .featured div p {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+
+  .featured .container {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+}
+
+/* Small displayers */
+@media screen and (max-width: 520px) {
+  .featured > div p {
+    margin: 1rem 0.5rem;
+  }
 }
