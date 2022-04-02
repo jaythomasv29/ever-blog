@@ -13,10 +13,11 @@ function Hero() {
             <input type="text" placeholder="Enter Keyword.."/>
           </div>
           <div className="radio">
-            <input type="radio" checked/>
-            <label>Buy</label>
-            <input type="radio"/>
+            <input type="radio" value="rent" name="type" checked/>
             <label>Rent</label>
+
+            <input type="radio" value="buy" name="type" />
+            <label>Buy</label>
             <button type="submit"><AiOutlineSearch className="icon" /></button>
           </div>
         </form>
